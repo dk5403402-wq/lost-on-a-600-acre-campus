@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I Found Something</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="form-page">
+
+    <h1>I Found Something</h1>
+
+    <p class="intro">
+      Hand the item in at the approved help desk,
+      then tell us here so the owner can find it.
+    </p>
+
+    <form action="thankyou.html" method="get">
+
+      <div class="two-columns">
+
+        <div>
+          <label for="item">Type of item</label>
+
+          <select id="item" name="item" required>
+            <option value="">Select item</option>
+            <option>Bottle</option>
+            <option>Notebook</option>
+            <option>Keys</option>
+            <option>ID Card</option>
+            <option>Electronics</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="place">Where did you find it?</label>
+
+          <select id="place" name="place" required>
+            <option value="">Select area</option>
+            <option>Classrooms</option>
+            <option>Cafeteria</option>
+            <option>Study areas</option>
+            <option>Common areas</option>
+          </select>
+        </div>
+
+      </div>
+
+      <label for="date">Date found</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="detail">
+        One private detail <span>(only staff see this)</span>
+      </label>
+
+      <textarea id="detail" name="detail"
+        rows="3"
+        placeholder="For example, a small mark on the item"></textarea>
+
+      <label for="phone">Your phone number (optional)</label>
+
+      <input type="tel" id="phone" name="phone"
+        placeholder="10-digit number"
+        pattern="[0-9]{10}"
+        maxlength="10">
+
+      <button type="submit">Submit Found Item</button>
+
+    </form>
+
+    <a class="back-link" href="index.html">Back to Home</a>
+
+  </main>
+
+</body>
+</html>

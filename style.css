@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 28px;
+  background: #111820;
+  color: #f4f6fa;
+  font-family: Georgia;
+}
+
+/* Header */
+
+header {
+  text-align: center;
+  background: #111820;
+  border-bottom: 5px solid #f4b942;
+  margin: -28px -28px 35px;
+  padding: 28px 15px 22px;
+}
+
+header h1 {
+  font-size: clamp(28px, 5vw, 48px);
+  margin: 10px 0 28px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+
+nav a, .back-link {
+  color: #f4b942;
+  font-size: 18px;
+}
+
+/* Home Page */
+
+.home {
+  max-width: 1050px;
+  margin: auto;
+  text-align: center;
+}
+
+.home > h2 {
+  font-size: clamp(32px, 5vw, 52px);
+  text-decoration: underline;
+}
+
+/* Cards */
+
+.card, .form-page, .confirmation {
+  max-width: 900px;
+  margin: 35px auto;
+  padding: 32px;
+  background: #1b252f;
+  border: 1px solid #344352;
+  border-radius: 10px;
+}
+
+.card {
+  text-align: left;
+}
+
+.card h2, .form-page h1, .confirmation h1 {
+  color: #f4f6fa;
+  margin-top: 0;
+}
+
+.card p, .intro {
+  color: #a9c4df;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Buttons */
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 25px;
+}
+
+.button, button {
+  display: inline-block;
+  background: #f4b942;
+  color: #111820;
+  border: 0;
+  border-radius: 7px;
+  padding: 13px 18px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Form Pages */
+
+.form-page {
+  max-width: 850px;
+  margin: 25px auto;
+}
+
+.form-page h1 {
+  font-size: 36px;
+}
+
+.two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+label {
+  display: block;
+  margin: 22px 0 9px;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+label span {
+  color: #9bb8d2;
+  font-weight: normal;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 14px;
+  color: #f4f6fa;
+  background: #1b252f;
+  border: 2px solid #344352;
+  border-radius: 8px;
+  font-size: 17px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  width: 100%;
+  margin-top: 24px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 22px;
+}
+
+/* Confirmation Pages */
+
+.confirmation {
+  max-width: 550px;
+  margin: 60px auto;
+}
+
+.confirmation p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 22px;
+}
+
+/* Mobile Design */
+
+@media (max-width: 650px) {
+
+  body {
+    padding: 16px;
+  }
+
+  header {
+    margin: -16px -16px 25px;
+  }
+
+  .two-columns {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .card, .form-page, .confirmation {
+    padding: 22px;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .actions .button {
+    text-align: center;
+  }
+
+}
