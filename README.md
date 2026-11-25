@@ -42,6 +42,10 @@ Lost-on-a-600-Acre-Campus/
 3. Open `index.html` in your browser.
 4. Navigate through the website and explore its features.
 
+## Live Website
+
+[https://dk5403402-wq.github.io/lost-on-a-600-acre-campus/](https://dk5403402-wq.github.io/lost-on-a-600-acre-campus/)
+
 ## Future Improvements
 - Add a database to store lost and found item reports.
 - Implement user registration and login.
